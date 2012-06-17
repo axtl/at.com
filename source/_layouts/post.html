@@ -1,0 +1,22 @@
+---
+layout: default
+heading: A Single Post
+---
+
+<article class='post hentry instapaper_body'>
+    <div class='entry-content'>
+        <h1><span class='entry-title instapaper_title'>{{ page.title }}</span></h1>
+        {% include instapaper.html %}
+        {{ content }}
+    </div>
+    <footer>
+        <time class='signoff' datetime='{{ page.date | date: '%Y-%m-%d' }}'>
+            {{ page.date | date: '%b %d, %Y' }}
+        </time>
+        <div id='meta'>
+            <p class='byline author vcard invisible'>
+                by &nbsp;&#x203b;&nbsp;<span class='fn'>{{ site.author }}</span>
+            </p>
+        </div>
+    </footer>
+</article>
